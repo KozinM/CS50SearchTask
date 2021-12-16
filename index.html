@@ -2,11 +2,76 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            .top_links {
+                text-align: right;
+            }
+            .logo {
+                text-align: center;
+                
+            }
+            .search {
+
+                height: 44px;
+                background: whitesmoke;
+                border: 1px solid #5f6368;
+                box-shadow: none;
+                border-radius: 24px;
+                margin: 0 auto;
+                width: 638px;
+                width: auto;
+                max-width: 584px;
+            }
+            .button{
+                background-color: whitesmoke;
+                border: 1px solid #303134;
+                border-radius: 4px;
+                color: black;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+
+                }
+            .text_input
+                {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                color: black;
+                word-wrap: break-word;
+                outline: none;
+                display: flex;
+                flex: 100%;
+                margin-top: 5px;
+                margin-left: 25px;
+                height: 34px;
+                font-size: 16px;
+            }
+        </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+        <div class="top_links">
+            <a href="search_image.html"> picture search</a>
+            <a href="search_advanced.html"> advanced search</a>
+        </div>
+        <div class="logo">
+        <img src="https://www.google.com/logos/doodles/2021/seasonal-holidays-2021-6753651837109324.3-ladc.gif" alt="Google Logo">
+    </div>
+       
+        <div>
+            <form class="search" action="https://google.com/search">
+            <input class="text_input" type="text" name="q">
+            <center>
+            <input class="button" type="submit" value="Google Search">
+            <input class="button" type="submit" value="I'm feeling lucky!" name="btnI">
+            </center>
         </form>
+        </div>
+    
     </body>
 </html>
